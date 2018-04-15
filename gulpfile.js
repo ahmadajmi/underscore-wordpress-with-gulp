@@ -59,7 +59,7 @@ gulp.task('watch', function() {
     proxy: 'http://localhost:8888/wordpress/',
   });
   gulp.watch('./sass/**/*.scss', ['sass', reload]);
-  gulp.watch('./js/*.js', ['js', reload]);
+  gulp.watch(['./js/*.js', '!./js/app.min.js'], ['js', reload]);
   gulp.watch('images/src/*', ['images', reload]);
 });
 
