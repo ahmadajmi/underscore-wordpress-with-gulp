@@ -1,5 +1,9 @@
 {
   "undef": true,
   "unused": true,
-  "browser": true
+  "browser": true,
+  "globals": {
+    "wp": false,
+    "jQuery": false
+  }
 }
